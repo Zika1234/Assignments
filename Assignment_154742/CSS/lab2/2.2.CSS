@@ -1,0 +1,19 @@
+h1
+{
+font-family: calibri;
+font-size: 30px;
+font-style: normal;
+font-weight: bold;
+color:#f5f5dc;
+text-decoration: underline;
+text-align: center;
+text-transform: uppercase;
+
+}
+p
+{
+font-family: verdana;
+font-size: 20px;
+font-style: italic;
+text-indent:50px;
+}

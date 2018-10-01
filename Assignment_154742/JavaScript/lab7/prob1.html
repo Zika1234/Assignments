@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        </head>
+        <script>
+        function display()
+        {
+            var a = document.forms["forms"]["text1"].value;
+            var b = document.forms["forms"]["text2"].value;
+            var c = document.forms["forms"]["text3"].value;
+            var si = (a*b*c)/100;
+           
+            var totalpay = a+si;
+            var monthly = totalpay/12; 
+            if(a>15)
+            {
+                alert("Loan amount is exceeded");
+            }
+            if(c<7 || c>15)
+            {
+                alert("Repaiment time is not in range");
+            }
+            document.getElementById("input1").value=monthly;
+            document.getElementById("input2").value=totalpay;
+            document.getElementById("input3").value=si;
+
+        }
+        </script>
+    
+    <body>
+        <h2>Enter Loan Information:</h2>
+        <form id="forms">
+            <table>
+                <tr>
+                    <td>1) Amount of the loan (any currency):</td>
+                    <td><input type="text" name="text1" pattern="[0-9]"> </td>
+               </tr>
+               <tr>
+                    <td>2) Annual percentage rate of interest:</td>
+                    <td><input type="text" name="text2"></td>
+               </tr>
+               <tr>
+                    <td>3) repayment period in years:</td>
+                    <td><input type="text" name="text3"></td>
+               </tr>
+            </table>
+            <input type="button" value="Compute" onclick="display()">
+            <h2>Payment Information</h2>
+            <table>
+                <tr>
+                    <td>4) Your monthly payment will be :</td>
+                    <td><input type="text" id="input1" disabled > </td>
+               </tr>
+               <tr>
+                    <td>5) Annual percentage rate of interest:</td>
+                    <td><input type="text" id="input2" disabled ></td>
+               </tr>
+               <tr>
+                    <td>6) repayment period in years:</td>
+                    <td><input type="text" id="input3" disabled></td>
+               </tr>
+            </table>
+
+        </form>
+
+    </body>
+</html>

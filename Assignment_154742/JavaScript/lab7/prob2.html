@@ -1,0 +1,68 @@
+
+<html>
+    <head>
+        <style>
+            #tab1
+            {
+                border: 20px solid white;
+                margin-left: 300px;
+                height: 300px;
+                width: 400px;
+            }
+            h1
+            {
+                margin-left: 380px;
+            }
+            body{
+                background-color: #4169e1;
+                height: 500px;
+                width: 600px;
+                
+            }
+            </style>
+        <script src="prob2.js" type="text/javascript">
+            
+
+        </script>
+    </head>
+    <body >
+        <h1 style="color:white">Product Details</h1>
+        
+        <form>
+            <table id="tab1">
+
+            <tr>
+                <th>Category</th> 
+                <td><select name="category" id="cate" onfocus="Func1()" >
+                   
+                        <option value="Electronics" >Electronics</option>
+                         <option value="Grocery"  >Grocery</option>
+                       
+                         </select></td>
+            </tr>
+
+            
+            <tr><th>Product</th>
+                <td><select id="mydiv"></select></td>
+            </tr>
+            <tr>
+                <th>Quantity</th>
+                <td><input type = "number" id="quan" name="qu"></td>
+            </tr>
+            <tr>
+                <th>Price</th>
+                <td><input type = "number" id="pric" readonly></td>
+            </tr>
+            
+<tr><td><input type="button" onclick="Func2()" value="Calculate"></td>
+<td><input type="reset" value="reset" onclick="onReset()"></td></tr>
+
+
+            </table>
+            </form>
+            
+       
+
+
+    </body>
+</html>

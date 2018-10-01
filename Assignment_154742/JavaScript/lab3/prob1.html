@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>
+        <script>
+            var d= new Date();
+
+            var days=["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+                        document.write(days[d.getDay()]+" "+months[d.getMonth()]+" "+ d.getDate()+" " +d.getHours()+":"+d.getMinutes()+":"+d.getSeconds()+" "+ d.getFullYear() );
+             var d1=d.getHours();
+            
+            document.write("<br>");
+           
+       
+            if(d1 < 12)
+            {
+                document.write("GOOD MORNING");
+            }
+            if(17 > d1 && d1>=12)
+            {
+                document.write("GOOD AFTERNOON");
+            }
+           if(d1 >= 17)
+            {
+                document.write("GOOD EVENING");
+            }
+        </script>
+        </body>
+</html>

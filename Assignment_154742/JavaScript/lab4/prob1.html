@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>
+        <h2>List of Employess <br>
+        -----------------------</h2>
+        <p id="demo"></p>
+        <script>
+
+        var arr=["Tove","Hege","Stale","Kai Jim","Borge","undefined"];
+        var x=arr.length;
+        var i=0;
+        var text="<ul>";
+        for( i=0 ; i < x; i++)
+        {
+            text +="<li>"+arr[i]+"</li>";
+           
+        }
+        text += "</ul>";
+        document.getElementById("demo").innerHTML=text;
+        
+        
+        </script>
+
+    </body>
+</html>

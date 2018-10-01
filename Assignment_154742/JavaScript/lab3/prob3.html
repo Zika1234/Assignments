@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>String is </td>
+                <td>:<span id="p1"></span></td>
+            </tr>
+            <tr>
+                <td>Results of str.match ("Capgemini") </td>
+                <td>:<span id="p2"></span></td>
+            </tr>
+            <tr>
+                <td>Result of str.substr(3,6)</td>
+                <td>:<span id="p3"></span></td>
+            </tr>
+            <tr>
+                <td>hello javascripters !</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td id="p4"> </td>
+                
+            </tr>
+
+        </table>
+
+
+
+
+        <script>
+        var s1 = "University of Capgemini";
+        document.getElementById("p1").innerHTML=s1;
+        var m1=s1.match(/Capgemini/g);
+      document.getElementById("p2").innerHTML=m1;
+       var ss1=s1.substring(3,9);
+       document.getElementById("p3").innerHTML=ss1;
+       var s2 ="hello javascripters !";
+       var s3 =s2.toUpperCase();
+       document.getElementById("p4").innerHTML=s3;
+
+        </script>
+    </body>
+</html>

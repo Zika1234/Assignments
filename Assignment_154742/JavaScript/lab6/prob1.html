@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <script>
+                function display()
+                {
+                    var a=document.forms["Form"]["text1"].value;
+                    var b=document.forms["Form"]["text2"].value;
+                    var c=document.forms["Form"]["text3"].value;
+                    var d=document.forms["Form"]["text4"].value;
+                    var a1 = a*20;
+                    var b1 =  b*30;
+                    var c1 = c*40;
+                    var d1 = d*50;
+                    var cen="center";
+                    var head = "<h2 align="+cen+">INVOICE</h2>";
+                var text = head + "<table border="+1+" align="+cen+"><tr><td>PRODUCT</td><td>QUANTITY</td><td>PRICE</td><td>TOTAL</td></tr>";
+                 if(!a && !b && !c && !d)
+                    {
+                        alert("no item selected");
+                    }
+                   
+                   else
+                   {
+                      if(a !=0)
+                        {
+                            text= text + "<tr><td>Barbie Doll</td><td>"+a+"</td><td>20</td><td>"+a1+"</td></tr>";
+                        }
+                      if(b !=0)
+                       {
+                            text= text + "<tr><td>Calculator</td><td>"+b+"</td><td>30</td><td>"+b1+"</td></tr>";
+                        }
+                        if(c !=0)
+                       {
+                            text= text + "<tr><td>Mobile Phones</td><td>"+c+"</td><td>40</td><td>"+c1+"</td></tr>";
+                        }
+                        if(d !=0)
+                       {
+                            text= text + "<tr><td>LG DVD</td><td>"+d+"</td><td>50</td><td>"+d1+"</td></tr>";
+                        }
+                
+                        text= text + "</table>" ;
+                      var mywindow=window.open("","mywindow","height=300px,width=500px");
+                        mywindow.document.write(text);
+                   }
+                   
+                       
+                   
+
+                }
+        </script>
+    </head>
+    <p id="demo" align="center"> </p>
+    <body style="background-color: aqua">
+
+        <h1>Products</h1>
+        <form name="Form" method="post" >
+            <table id="tab">
+                <tr align="center">
+                <th>Name</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Qty</th>
+                </tr>
+                <tr id="r1">
+                    <td>Barbie Doll</td>
+                    <td>Beautiful</td>
+                    <td>20</td>
+                    <td><input type="number" name="text1" >
+
+                </tr>
+                <tr id="r2">
+                    <td>Calculator</td>
+                    <td>Calculator with latest features</td>
+                    <td>30</td>
+                    <td><input type="number" name="text2">
+                    
+                </tr>
+                <tr id="r3">
+                    <td>Mobile Phone</td>
+                    <td>Camera,Java,Games,GPRS</td>
+                    <td>40</td>
+                    <td><input type="number" name="text3">
+                    
+                </tr>
+                <tr>
+                    <td id="r4">LG DVD</td>
+                    <td>5 Disc Changer</td>
+                    <td>20</td>
+                    <td><input type="number" name="text4">
+                    
+                </tr>
+
+            </table>
+            <input type="submit" value="ORDER" name="order" onclick="display()"></input>
+        </form>
+
+    </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Loop</title>
+        <script>
+
+        </script>
+    </head>
+    <body>
+        <p>-----------------------------------------------------------------------------------------------------------</p>
+        <h2>**********Calculate Compound Interest**********</h2>
+        <p>-----------------------------------------------------------------------------------------------------------</p>
+        <br>
+        <br>
+
+        <table >
+            <tr>
+                <td>Principle</td>
+                <td>-1000rs</td>
+            </tr>
+            <tr>
+                <td>Rate of Interest</td>
+                <td>-10%</td>
+            </tr>
+            <tr>
+                <td>Period</td>
+                <td>-1 yr</td>
+            </tr>
+            <tr>
+                <td>Comp Interest</td>
+                <td id="p1">-</td>
+            </tr>
+
+        </table>
+       
+       
+        
+        <script>
+            var p=1000;
+            var r=10;
+            var n=1;
+           var sqrt=(1+0.01*r);
+           var pw = Math.pow(sqrt,n);
+           
+            var c= (p*pw);
+            var c1= c-p;
+            document.getElementById("p1").innerHTML="-" +c1;
+            
+            </script>
+    </body>
+</html>

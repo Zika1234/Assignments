@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Employees Details</title>
+    </head>
+    <style>
+        table,tr,td,th{
+            background-color: aqua;
+            border: 1px solid black;
+        }
+
+        </style>
+    <body>
+        <table>
+            <form>
+            <tr>
+                <th>Name</th>
+                <td><input type="text" name="name" maxlength="20"></td>
+            </tr>
+            <tr>
+                <th>Employee Code</th>
+                <td><input type="text" name="code" maxlength="4"></td>
+            </tr>
+            <tr>
+                <th>Deaprtment</th>
+                <td><input type="radio" name="admin">Admin<br>
+                    <input type="radio" name="HE">HR<br>
+                    <input type="radio" name="Technicle">technical<br>
+                    <input type="radio" name="Accounts">Accounts</td><br>
+            </tr>
+            <tr>
+                <th>Date of Joining</th>
+                <td><input type="date" value="1"> </td> 
+
+            </tr>
+            <tr>
+                <th>Address</th>
+                <td><textarea></textarea>
+            </tr>
+            <tr>
+                <th>Training progrma attended</th>
+                <td><input type="checkbox" name=HTML>HTML/DHTML<br>
+                <input type="checkbox" name=Java>JAVA<br>
+                <input type="checkbox" name=Client>Client/Server<br>
+                <input type="checkbox" name=NET>>NEt<br>
+            </tr>
+            <tr>
+                <th>training Program need to attend</th>
+                <td><select name="Program"><option value="JAVASCRIPT">JAVAscript</option>
+                    <option value="CSS3">CSS3</option>
+                        <option value="BOOTSTAP">Bootstrap</option>
+                    </select>
+                    </td>
+            </tr>
+            <tr>
+                <th>Sent the information at</th>
+                <td><a href "mailto:empinfo@capgemini.com">empinfo@capgemini.com</a></td>
+            </tr>
+
+            </form>
+        </table>
+    </body>
+</html>
